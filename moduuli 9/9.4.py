@@ -30,14 +30,12 @@ for i in range(10):
     autot.append(auto1)
 
 #kilpailu
-if pisin < 10000:
+while pisin < 10000:
     for auto in autot:
         auto.kiihdytä(random.randint(-10,15))
-
-    for auto in autot:
         auto.kulje(1)
-    if auto.Kmatka > pisin:
-        auto.Kmatka=pisin
+        if auto.Kmatka > pisin:
+            pisin=auto.Kmatka
 
 Tuloslista=[]
 
