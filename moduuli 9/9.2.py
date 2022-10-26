@@ -4,13 +4,18 @@ class Auto:
         self.Hnop = Hnop
         self.ATMnop = 0
     def kiihdytä(self, muutos):
-        if muutos <=0:
-                self.ATMnop-=muutos
-        elif muutos >=0:
-                self.ATMnop+=muutos
+        self.ATMnop+= muutos
+
+        if self.ATMnop > self.Hnop:
+            self.ATMnop = self.Hnop
+
+        elif self.ATMnop < 0:
+            self.ATMnop=0
+
+
 
 #pääohjelma
-auto1=Auto("ABC-123",143, 0)
+auto1=Auto("ABC-123",142)
 auto1.kiihdytä(30)
 auto1.kiihdytä(70)
 auto1.kiihdytä(50)
