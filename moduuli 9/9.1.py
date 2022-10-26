@@ -7,4 +7,4 @@ class Auto:
         print(f"auton rekisterinumero on {self.rek}\nhuippunopeus on {self.Hnop}\nnopeus on {self.ATMnop}\nkokonaismatka {self.Kmatka}")
         return
 #pääohjelma
-auto1=Auto("ABC-123",143, "", "" )
+auto1=Auto("ABC-123",142, "", "" )
