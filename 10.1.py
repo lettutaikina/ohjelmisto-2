@@ -3,3 +3,4 @@ class Hissi:
         self.alinkerros=ak
         self.ylinkerros=yk
         print(self.ylinkerros, self.alinkerros)
+
