@@ -20,15 +20,15 @@ class Hissi:
     def siirry_kerrokseen(self,käsky):
         while käsky != self.kerros:
             if self.kerros< käsky:
-                self.kerros_ylös(käsky)
+                self.kerros_ylös()
             if self.kerros> käsky:
-                self.kerros_alas(käsky)
+                self.kerros_alas()
         return
-    def kerros_ylös(self,käsky):
+    def kerros_ylös(self):
         self.kerros = self.kerros + 1
         print(f'Olet kerroksessa {self.kerros}')
         return
-    def kerros_alas(self, käsky):
+    def kerros_alas(self):
         self.kerros = self.kerros - 1
         print(f'Olet kerroksessa {self.kerros}')
         return
