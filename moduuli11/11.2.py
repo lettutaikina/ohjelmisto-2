@@ -12,7 +12,6 @@ class Auto:
 
     def kulje(self,tunnit):
         self.Kmatka+=tunnit*self.ATMnop
-        print(f"kuljettu matka on {self.Kmatka}km")
         
 class Sähköauto(Auto):
     def __init__(self,rek,Hnop,ATMnop, akkukapa):
@@ -21,7 +20,7 @@ class Sähköauto(Auto):
 
     def tulosta_tiedot(self):
         super(Sähköauto, self).tulosta_tiedot()
-        print(f"Huippunopeus {self.Hnop}km/h\nAkkukapasiteetti {self.akkukapa}kWh")
+        print(f"Huippunopeus {self.Hnop}km/h\nAkkukapasiteetti {self.akkukapa}kWh\nKuljettumatka {self.Kmatka}")
         
     
 class Polttomoottoriauto(Auto):
@@ -31,7 +30,7 @@ class Polttomoottoriauto(Auto):
 
     def tulosta_tiedot(self):
         super(Polttomoottoriauto, self).tulosta_tiedot()
-        print(f"Huippunopeus {self.Hnop}km/h\nTankinkoko {self.bensakok} litraa")
+        print(f"Huippunopeus {self.Hnop}km/h\nTankinkoko {self.bensakok} litraa\nKuljettumatka {self.Kmatka}")
 
 #PÄÄOHJELMA
 autot=[]
