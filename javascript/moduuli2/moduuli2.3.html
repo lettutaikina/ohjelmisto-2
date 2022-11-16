@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>moduuli2.3</title>
+</head>
+<body>
+<h1>moduuli2.3</h1>
+<ul id="target"></ul>
+<script>
+  prompt('name six dogs')
+  let lap=6
+  const names=[]
+  while (lap!=0) { names.push(prompt('name?'))
+      lap=lap-1
+
+  }
+
+  names.sort()
+  names.reverse()
+  for (let name of names) {
+      document.querySelector('#target').innerHTML+=`<li>${name}</li>`;
+    }
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
