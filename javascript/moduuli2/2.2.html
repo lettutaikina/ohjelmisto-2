@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>moduuli2.2</h1>
-<p id="target"></p>
+<ol id="target"></ol>
 <script>
   let lap=prompt('How many participants')
   const names=[]
@@ -17,8 +17,10 @@
 
   names.sort()
   for (let name of names) {
-      console.log(`Name: ${name}`);
+      document.querySelector('#target').innerHTML+=`<li>${name}</li>`;
     }
+
+
 
 
 
