@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moduuli1.4</title>
+</head>
+<body>
+<h1>Moduuli1.4</h1>
+<p id="target"></p>
+<script>
+'use strict'
+    const name=prompt('Type your name to find out your house: Gryffindor, Slytherin, Hufflepuff or Ravenclaw.');
+    let house;
+    let result = Math.floor(Math.random()*4)+1;
+    console.log(result);
+    if (result==1) {house='Gryffindor'};
+    if (result==2) {house='Slytherin'};
+    if (result==3) {house='Hufflepuff'};
+    if (result==4) {house='Ravenclaw'};
+    document.querySelector('#target').innerHTML= name +', you belong to the house '+house;
+</script>
+
+</body>
+</html>

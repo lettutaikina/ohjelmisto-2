@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moduuli1.3</title>
+</head>
+<body>
+<h1>Moduuli1.3</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+
+    const num1=parseInt(prompt('Give number 1'));
+    const num2=parseInt(prompt('Give number 2'));
+    const num3=parseInt(prompt('Give number 3'));
+    const sum=num1+num2+num3
+    const prod= num1*num2*num3
+    const aveg=sum/3
+
+    document.querySelector('#target').innerHTML = 'aveg= ' +aveg+ ' Sum= ' +sum+ ' Product= ' +prod;
+</script>
+
+</body>
+</html>
