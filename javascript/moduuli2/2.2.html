@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>moduuli2.2</title>
+</head>
+<body>
+<h1>moduuli2.2</h1>
+<p id="target"></p>
+<script>
+  let lap=prompt('How many participants')
+  const names=[]
+  while (lap!=0) { names.push(prompt('name?'))
+      lap=lap-1
+
+  }
+
+  names.sort()
+  for (let name of names) {
+      console.log(`Name: ${name}`);
+    }
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
