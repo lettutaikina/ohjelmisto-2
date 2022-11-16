@@ -12,10 +12,11 @@
   let times=prompt('How many dices would you want to trow, I`ll calculate the sum of these trows');
   let sum=0;
 
-  if times!=0;
-    let trow =Math.floor(Math.random()*6+1);
-    sum=sum+trow;
-    times=times-1;
+  while (times!=0) {
+      let trow = Math.floor(Math.random() * 6 + 1);
+      sum = sum + trow;
+      times = times - 1;
+  }
 
   document.querySelector('#target').innerHTML='Sum of the dices trown is'+ sum;
 
